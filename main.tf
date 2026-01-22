@@ -31,5 +31,5 @@ resource "aws_instance" "demo" {
 
 resource "aws_key_pair" "reused_key" {
         key_name = "reused-key"
-        public_key = file("~/.ssh/terraform-key.pub")
+        public_key = file("/var/lib/jenkins/.ssh/terraform-key.pub")
 }
